@@ -102,7 +102,7 @@ public class BankLine implements QueueInterface<Customer>
         {
             // Draw the first customers in line
             int positionX = leftX;
-            Iterator iter = queue.iterator();
+            Iterator<Customer> iter = queue.iterator();
             for(int i=0; i<CUSTOMERS_TO_DRAW && iter.hasNext(); i++)
             {
                 ((Customer)iter.next()).drawOn(g, positionX, baseY);
